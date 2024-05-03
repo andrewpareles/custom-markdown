@@ -1,4 +1,3 @@
 MDX? No, MDY!
 
-
-Wonder Y?
+Simple + customizable.
