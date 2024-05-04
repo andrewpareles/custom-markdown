@@ -3,7 +3,7 @@
 
 Simple + customizable.
 
-See `Demo.tsx` for a demo, or keep reading this for more details.
+See [https://github.com/andrewpareles/custom-markdown/blob/main/Demo.tsx](Demo.tsx) for a demo, or keep reading this for more details.
 
 
 ## Customizing
