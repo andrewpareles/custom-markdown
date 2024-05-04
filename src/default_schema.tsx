@@ -1109,27 +1109,6 @@ const default_schema: user_specified_schema_of_type = {
     },
 
 
-
-
-    // 'swcontainer': {
-    //     theseCanBeCreatedAsDirectChildren: ['swsection'],
-
-    //     createSubstring: `\n<<`,
-    //     exitSubstring: '\n>>',
-    //     mustExitWithExitSubstring: true,
-    //     canReuseExitSubstringAsCreateSubstring: false,
-
-    //     getHTML: ({ ASTNode, childrenHTML, asOutline }) => asOutline ? childrenHTML : (<SidewaysContainer>{childrenHTML}</SidewaysContainer>)
-    // },
-
-    // // TODO! outline of sws is comma separated flexbox list of headers
-    // ...sectionSchema({
-    //     typeName: 'swsection',
-    //     theseCanBeCreatedAsDirectChildren: ['inline', 'bigmath'],
-    //     prefixStr: '#',
-    //     getHTML: getHTML_Section,
-    // }),
-
     // standard allowed block types
     'block': {
         theseDirectChildrenCanCreateThisAsParent: ['inline', 'image', 'bigmath', 'hline', 'split', 'bigcode', 'pseudocode', 'spoiler', 'subsection'],  // when you create text or math, it has to create a content node
@@ -1140,7 +1119,7 @@ const default_schema: user_specified_schema_of_type = {
     },
 
     /**
-     * inline content (auto-created by default, this is specified in noteAST)
+     * inline content (auto-created by block)
      */
     'inline': {
         theseDirectChildrenCanCreateThisAsParent: ['link', 'detail', 'text', 'math', 'bold', 'italics', 'label', 'ref', 'code', 'tip'],  // when you create text or math, it has to create a content node
