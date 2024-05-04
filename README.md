@@ -8,7 +8,7 @@ See [Demo.tsx](https://github.com/andrewpareles/custom-markdown/blob/main/Demo.t
 
 ## Customizing
 
-You can make it so that pretty much any pattern in the markdown gets recognized and then rendered into a custom React component. Just extend [default_schema.ts](https://github.com/andrewpareles/custom-markdown/blob/main/default_schema.ts). Here's how:
+You can make it so that pretty much any pattern in the markdown gets recognized and then rendered into a custom React component. Just extend [default_schema.ts](https://github.com/andrewpareles/custom-markdown/blob/main/default_schema.ts). 
 
 If you want some component `<MyComponent>` to render when `\myComponent{whatever}` shows up in the markdown, all you need to do is create an entry in the schema with  `createSubstring = '\myComponent{'` and `endSubstring = '}'`, and specify the getHTML function.
 
