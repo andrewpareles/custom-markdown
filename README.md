@@ -15,7 +15,7 @@ If you want some component `<MyComponent>` to render when `\myComponent{whatever
 More complicated examples: you can add a 'my_table' markdown component that recognizes syntax like `\table{{row1}{row2}{row3}}` in the markdown, and renders your own custom table component. Or adding a `## My subsection` component that takes everything in the subsection, including the children, and puts it in a div (this is already implemented for you, see the `default_schema.ts` file).
 
 
-## Inner workings + extending
+## Inner workings
 
 This library works by going from **your markdown** (raw text) -> **AST** -> **React**. "AST" means abstract syntax tree - it's an internal representation of your markdown before it gets compiled to React. It's just a bunch of nodes in the shape of the React document. We first make the AST, then we create a React component for all its nodes. Pretty simple.
 
