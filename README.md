@@ -17,7 +17,7 @@ More complicated examples: you can add a 'my_table' markdown component that reco
 
 ## Inner workings
 
-This library works by going from **your markdown** (raw text) -> **AST** -> **React**. The AST is an internal representation of your markdown before it gets compiled to React. It's just a bunch of nodes in the shape of the React document. We first make the AST, then we create a React component for all its nodes. Pretty simple.
+This library works by going from **your markdown** (raw text) -> **AST** -> **React**. The AST is an internal representation of your markdown before it gets compiled to React. Without oversimplifying, it's literally just a bunch of nodes in the shape of the React document. We first make the AST, then we create a React component for all its nodes. Pretty simple.
 
 
 ## Misc notes - advanced details
