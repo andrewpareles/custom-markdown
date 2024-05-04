@@ -1,3 +1,6 @@
+[![npm](https://img.shields.io/npm/v/custom-markdown)](https://www.npmjs.com/package/custom-markdown)
+
+
 Simple + customizable.
 
 See `Demo.tsx` for a demo, or keep reading this for more details.
