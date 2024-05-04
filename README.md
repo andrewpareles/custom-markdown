@@ -2,7 +2,7 @@ MDX? No, MDY!
 
 Simple + customizable.
 
-See `Demo.tsx` for a demo on what's offered and how to use MDY.
+See `Demo.tsx` for a demo, or keep reading this for more details.
 
 
 ## Customizing
