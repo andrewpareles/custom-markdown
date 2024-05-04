@@ -12,9 +12,11 @@ You can make it so that pretty much any pattern in the markdown gets recognized 
 
 If you want to render `\myComponent{whatever}` in your markdown to `<MyComponent>`, all you need to do is create an entry in the schema with  `createSubstring = '\myComponent{'` and `endSubstring = '}'`.
 
-More complicated examples: you can add a 'my_table' markdown component that recognizes syntax like `\table{{row1}{row2}{row3}}` in the markdown and render your own custom table component. You just need to make a table schema entry that recognizes `\\table{whatever}`, and a row schema entry that recognizes `'{whatever}'`, and make it so the row is only allowed to be created in table. 
-Or, you can do complicated things like add a `## My subsection` component that takes everything in the subsection, including the children, and puts it in a div - this is already implemented as the `'subsection'` entry in [default_schema.ts](https://github.com/andrewpareles/custom-markdown/blob/main/default_schema.ts). 
-You can even add things like bullet points like `- a`, just make it so that `createString = '\n- a'` and `endString = '\n'`.
+More examples of what you can do: 
+
+- You can add a 'my_table' markdown component that recognizes syntax like `\table{{row1}{row2}{row3}}` in the markdown and render your own custom table component. You just need to make a table schema entry that recognizes `\\table{whatever}`, and a row schema entry that recognizes `'{whatever}'`, and make it so the row is only allowed to be created in table. 
+- Or, you can do complicated things like add a `## My subsection` component that takes everything in the subsection, including the children, and puts it in a div - this is already implemented as the `'subsection'` entry in [default_schema.ts](https://github.com/andrewpareles/custom-markdown/blob/main/default_schema.ts). 
+- You can even add things like bullet points like `- a`, just make it so that `createString = '\n- a'` and `endString = '\n'`.
 
 ## Inner workings
 
