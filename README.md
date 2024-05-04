@@ -10,7 +10,7 @@ See [Demo.tsx](https://github.com/andrewpareles/custom-markdown/blob/main/Demo.t
 
 You can make it so that pretty much any pattern in the markdown gets recognized, and then rendered as your own React component. Just extend [default_schema.ts](https://github.com/andrewpareles/custom-markdown/blob/main/default_schema.ts). Here's how:
 
-If you want some component `<MyComponent>` to render when `\myComponent{whatever}` shows up in the markdown, then just create an entry in the schema, and make its 'createSubstring' parameter `\myComponent{` and its 'endSubstring' parameter `}`, and specify the getHTML function to render whatever you want.
+If you want some component `<MyComponent>` to render when `\myComponent{whatever}` shows up in the markdown, all you need to do is create an entry in the schema with  `createSubstring = '\myComponent{'` and `endSubstring = '}'`, and specify the getHTML function to render whatever you want.
 
 More complicated examples: you can add a 'my_table' markdown component that recognizes syntax like `\table{{row1}{row2}{row3}}` in the markdown, and renders your own custom table component. Or adding a `## My subsection` component that takes everything in the subsection, including the children, and puts it in a div (this is already implemented for you, see the `default_schema.ts` file).
 
