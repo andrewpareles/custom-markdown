@@ -3,12 +3,12 @@
 
 Simple + customizable.
 
-See [https://github.com/andrewpareles/custom-markdown/blob/main/Demo.tsx](Demo.tsx) for a demo, or keep reading this for more details.
+See [Demo.tsx](https://github.com/andrewpareles/custom-markdown/blob/main/Demo.tsx) for a demo, or keep reading this for more details.
 
 
 ## Customizing
 
-You can make it so that pretty much any pattern in the markdown gets recognized, and then rendered as your own React component. `default_schema.ts` specifies all the default patterns and components, and you can extend this or create your own schema from scratch. Here's how to extend the schema.
+You can make it so that pretty much any pattern in the markdown gets recognized, and then rendered as your own React component. [default_schema.ts](https://github.com/andrewpareles/custom-markdown/blob/main/default_schema.ts) specifies all the default patterns and components, and you can extend this or create your own schema from scratch. Here's how to extend the schema.
 
 If you want some component `<MyComponent>` to render when `\myComponent{whatever}` shows up in the markdown, then just create an entry in the schema (name it anything you want, e.g. `my_component`), and make its 'createSubstring' parameter `\myComponent{` and its 'endSubstring' parameter `}`, and specify the getHTML function to render whatever you want.
 
