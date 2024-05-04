@@ -12,7 +12,7 @@ You can make it so that pretty much any pattern in the markdown gets recognized 
 
 If you want some component `<MyComponent>` to render when `\myComponent{whatever}` shows up in the markdown, all you need to do is create an entry in the schema with  `createSubstring = '\myComponent{'` and `endSubstring = '}'`, and specify the getHTML function.
 
-More complicated examples: you can add a 'my_table' markdown component that recognizes syntax like `\table{{row1}{row2}{row3}}` in the markdown and render your own custom table component. You just need to make a table schema entry that recognizes \table{}, and a row entry that recognizes {} and is only allowed in table. Or, you can do complicated things like add a `## My subsection` component that takes everything in the subsection, including the children, and puts it in a div - this is already implemented as the 'subsection' entry.
+More complicated examples: you can add a 'my_table' markdown component that recognizes syntax like `\table{{row1}{row2}{row3}}` in the markdown and render your own custom table component. You just need to make a table schema entry that recognizes \\table{}, and a row entry that recognizes {} and is only allowed in table. Or, you can do complicated things like add a `## My subsection` component that takes everything in the subsection, including the children, and puts it in a div - this is already implemented as the 'subsection' entry.
 
 
 ## Inner workings
