@@ -1,10 +1,10 @@
 
 import React, { useRef } from "react";
-import { GlobalState } from "./markup/ExtractedSchemaInfo";
-import computeASTs from "./markup/computeASTs";
-import RenderAST from "./markup/RenderAST";
-import computeSchemaInfo from "./markup/computeSchemaInfo";
-import default_schema from "./markup/default_schema";
+import { GlobalState } from "./src/ExtractedSchemaInfo";
+import computeASTs from "./src/computeASTs";
+import RenderAST from "./src/RenderAST";
+import computeSchemaInfo from "./src/computeSchemaInfo";
+import default_schema from "./src/default_schema";
 
 
 const myMarkdownFile = `
