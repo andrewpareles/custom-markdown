@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useMemo, useRef, useState, DOMAttributes, useCallback } from 'react'
 
 import { AST } from './AST'
-import type { GlobalState, ASTNodeMetadata, getHTMLFnInputs, user_specified_schema_of_type, user_specified_schema, GlobalASTFields, HTMLContextType } from './SchemaInfo'
+import type { GlobalState, ASTNodeMetadata, getHTMLFnInputs, user_specified_schema_of_type, user_specified_schema, GlobalASTFields, HTMLContextType } from './ExtractedSchemaInfo'
 
 import { ActionIcon, Box, Button, Card, Chip, Code, Collapse, Divider, Flex, Group, MantineTheme, Overlay, Popover, ScrollArea, Spoiler, type Sx, Text, ThemeIcon, Title, useMantineTheme, MantineColor, BoxProps } from '@mantine/core'
 import { Paper, Portal, Transition } from "@mantine/core"

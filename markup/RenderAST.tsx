@@ -1,11 +1,11 @@
 
 // need to ensure it always gets inputted the full context
 
-import SchemaInfo, { GlobalASTFields, GlobalState, HTMLContextType, HTMLOnlyContextType } from "./SchemaInfo"
+import ExtractedSchemaInfo, { GlobalASTFields, GlobalState, HTMLContextType, HTMLOnlyContextType } from "./ExtractedSchemaInfo"
 import { AST } from "./AST"
 
 // can't use traverseAST here: it recurses thru each node, and this only gets called on the root node and then recurses by calling getHTML.
-type helperProps = { ASTNode: AST, context: HTMLContextType, schemaInfo: SchemaInfo, globalASTFields: GlobalASTFields, globalState: GlobalState, init_context: HTMLContextType }
+type helperProps = { ASTNode: AST, context: HTMLContextType, schemaInfo: ExtractedSchemaInfo, globalASTFields: GlobalASTFields, globalState: GlobalState, init_context: HTMLContextType }
 const ASTComponent_helper = (props: helperProps) => {
     const { ASTNode, context, schemaInfo, globalASTFields, globalState, init_context } = props
 
@@ -32,7 +32,7 @@ type rootComponentProps = {
     context: HTMLOnlyContextType,
     globalASTFields: GlobalASTFields,
     globalState: GlobalState,
-    schemaInfo: SchemaInfo,
+    schemaInfo: ExtractedSchemaInfo,
 }
 const RenderAST = (props: rootComponentProps) => {
     const rootContext = { ...(props.schemaInfo.infoOfType['root'].childContext as HTMLContextType), ...props.context }

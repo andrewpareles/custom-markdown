@@ -1,38 +1,7 @@
 import { useMemo } from "react"
 import default_schema from "./default_schema"
-import SchemaInfo, { HTMLContextType, user_specified_schema_of_type } from "./SchemaInfo"
+import ExtractedSchemaInfo, { HTMLContextType, user_specified_schema_of_type } from "./ExtractedSchemaInfo"
 
-
-
-
-const rootSchemaOfType = {
-    'title': {
-        theseCanBeCreatedAsDirectRootChildren: ['inline'],
-        childContext: {
-            ID_prefix: 'title',
-            inArgs: true,
-            useIDs: true,
-            canHaveImages: false,
-            inRefPreview: false,
-            asOutline: false,
-        }
-    },
-    'desc': {
-        theseCanBeCreatedAsDirectRootChildren: ['inline'],
-        childContext: {
-            ID_prefix: 'desc',
-            inArgs: false,
-            useIDs: true,
-            canHaveImages: false,
-            inRefPreview: false,
-            asOutline: false,
-        }
-    },
-    'body': {
-        // TODO allow for removal of 'inline' here?
-
-    }
-}
 
 
 const computeSchemaInfo = ({ schema = default_schema, theseCanBeCreatedAsDirectRootChildren, childContext }: {
@@ -40,7 +9,7 @@ const computeSchemaInfo = ({ schema = default_schema, theseCanBeCreatedAsDirectR
     theseCanBeCreatedAsDirectRootChildren: string[],
     childContext: HTMLContextType
 }) => {
-    return new SchemaInfo({
+    return new ExtractedSchemaInfo({
         ...schema,
         'root': {
             ...schema['root'],

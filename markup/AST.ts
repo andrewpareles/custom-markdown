@@ -1,4 +1,4 @@
-import SchemaInfo, { ASTNodeMetadata, ContextType, GlobalASTFields, GlobalState } from "./SchemaInfo"
+import ExtractedSchemaInfo, { ASTNodeMetadata, ContextType, GlobalASTFields, GlobalState } from "./ExtractedSchemaInfo"
 
 class AST {
     type: string
@@ -29,7 +29,7 @@ const traverseAST = <T,>(
     // top down / preorder. Can set context as traverse down by returning new context fields.
     doThisBeforeTraversingChildren: null | ((ASTNode: AST, context: ContextType) => Partial<ContextType> | void),
     // get child context using info
-    useSchemaInfoToComputeChildContext: SchemaInfo | undefined,
+    useSchemaInfoToComputeChildContext: ExtractedSchemaInfo | undefined,
     // bottom up / postorder. I automatically create an array of the results at each step, but it's not currently used.
     doThisAfterTraversingChildren: null | ((ASTNode: AST, context: ContextType, childResults: T[]) => T),
     // note there's no inorder traversal -- we only have cCHILDREN, CHILDRENc.
@@ -75,7 +75,7 @@ const traverseAST = <T,>(
 
 
 
-const generateAST_modifyingGlobalASTFields = (schemaInfo: SchemaInfo, markupText: string, MUTABLE_globalASTFields: GlobalASTFields, globalState: GlobalState) => {
+const generateAST_modifyingGlobalASTFields = (schemaInfo: ExtractedSchemaInfo, markupText: string, MUTABLE_globalASTFields: GlobalASTFields, globalState: GlobalState) => {
     const {
         createTrie,
         exitTrie,

@@ -1,9 +1,9 @@
 
 import { AST, generateAST_modifyingGlobalASTFields } from './AST'
-import SchemaInfo, { GlobalASTFields, GlobalState } from './SchemaInfo'
+import ExtractedSchemaInfo, { GlobalASTFields, GlobalState } from './ExtractedSchemaInfo'
 
 //[[titleInfo,title_text], [descInfo, desc_text], ...], { imageOfLabel, cropAndImageOfLabel, etc }
-const computeASTs = (astParameters: [SchemaInfo, string][], globalState: GlobalState): [GlobalASTFields, AST[]] => {
+const computeASTs = (astParameters: [ExtractedSchemaInfo, string][], globalState: GlobalState): [GlobalASTFields, AST[]] => {
     // every time an update happens, recompute everything (labels, refs, etc assume starting from scratch. 
     // Can optimize for this later by diffing ASTNode trees)
 
