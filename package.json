@@ -1,7 +1,7 @@
 {
-  "name": "mdz",
-  "version": "1.0.0",
-  "description": "MDY is a custom mardown parser that compiles to React. Add custom markdown syntax, specify a schema + components.",
+  "name": "custom-markdown",
+  "version": "1.0.1",
+  "description": "Custom-markdown is a custom mardown parser that compiles to React. Add custom markdown syntax, specify a schema + components.",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
