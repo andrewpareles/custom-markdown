@@ -1,0 +1,37 @@
+{
+  "name": "mdy",
+  "version": "1.0.0",
+  "description": "MDY is a custom mardown parser that compiles to React. Add custom markdown syntax, specify a schema + components.",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewpareles/MDY.git"
+  },
+  "keywords": [
+    "mdx",
+    "alternative",
+    "custom",
+    "parser",
+    "react",
+    "markdown"
+  ],
+  "author": "Andrew Pareles",
+  "bugs": {
+    "url": "https://github.com/andrewpareles/MDY/issues"
+  },
+  "homepage": "https://github.com/andrewpareles/MDY#readme",
+  "dependencies": {
+    "@mantine/core": "^6.0.16",
+    "@mantine/hooks": "^6.0.11",
+    "@monaco-editor/react": "^4.6.0",
+    "@tabler/icons-react": "^3.3.0",
+    "@types/react": "^18.2.21",
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-katex": "^3.0.1"
+  }
+}
