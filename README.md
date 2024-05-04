@@ -25,4 +25,4 @@ There were render issues when allowing getHTML to be a component, so it's just a
 
 
 ## Collaborating
-I'd love to see this tool extended, and will happily help if you get in touch. Email andrewpareles@gmail.com if you want to collaborate or have any questions. 
+I'd love to see this tool extended. Email andrewpareles@gmail.com if you want to collaborate or have any questions. 
