@@ -2,6 +2,8 @@
 
 Simple + customizable mardown to React parser. [View on github](https://github.com/andrewpareles/custom-markdown).
 
+Similar to MDX, but simpler and more customization features.
+
 See [`Demo.tsx`](https://github.com/andrewpareles/custom-markdown/blob/main/Demo.tsx) for a demo, or keep reading for more details. 
 
 
