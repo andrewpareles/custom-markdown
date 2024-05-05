@@ -29,26 +29,18 @@ y = [e for e in range(20)]
 print('bye.')
 \`\`\`
 
-
 `
 
-
+// specify your schema
 const mySchemaInfo = computeSchemaInfo({
     schema: default_schema, // use the default schema (you can provide your own, too, just use default_schema as a reference point)
     theseCanBeCreatedAsDirectRootChildren: ['subsection', 'block'], // you can create a 'subsection' item (by typing ##, see the 'subsection' entry), or a 'block' item (by typing pretty much anything, see the'block' entry in the default_schema)
-    childContext: { // the context the AST builder has right when it enters the root node
-        ID_prefix: '',
-        inArgs: false,
-        useIDs: true,
-        canHaveImages: true,
-        inRefPreview: false,
-        asOutline: false,
-    }
+    childContext: { ID_prefix: '', inArgs: false, useIDs: true, canHaveImages: true, inRefPreview: false, asOutline: false, }
 })
 
 
 
-
+// this component renders `myMarkdownFile` into React
 export default function App() {
     const scrollContainerRef = useRef<HTMLDivElement>(null) // unused here, if RenderAST is in a scrollable container set this to the parent if you want to use the 'label' and 'ref' components
     const noteContainerRef = useRef<HTMLDivElement>(null)
@@ -64,3 +56,4 @@ export default function App() {
         <RenderAST {...({ ASTNode: ast, context: { asOutline: false }, globalASTFields, globalState, schemaInfo: mySchemaInfo })} />
     </div>
 }
+
