@@ -1,9 +1,10 @@
 {
   "name": "custom-markdown",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Custom-markdown is a custom mardown parser that compiles to React. Add custom markdown syntax, specify a schema + components.",
   "license": "MIT",
-  "main": "index.js",
+  "type":"module",
+  "main": "exports.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
