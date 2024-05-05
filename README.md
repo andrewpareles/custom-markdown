@@ -1,9 +1,6 @@
 [![npm](https://img.shields.io/npm/v/custom-markdown)](https://www.npmjs.com/package/custom-markdown)
 
-
-MDX? No - MDY! Also called "custom-markdown".
-
-Simple + customizable. [View on github](https://github.com/andrewpareles/custom-markdown).
+Simple + customizable mardown to React parser. [View on github](https://github.com/andrewpareles/custom-markdown).
 
 See [`Demo.tsx`](https://github.com/andrewpareles/custom-markdown/blob/main/Demo.tsx) for a demo, or keep reading for more details. 
 
@@ -22,7 +19,7 @@ More examples of what you can do:
 
 ## Inner workings
 
-This library works by converting from **your markdown --> AST --> React**. The AST is an internal representation of your markdown - without risk of oversimplifying, it's just a bunch of nodes in the shape of the React document. We first make the AST, then we create a React component for all its nodes. 
+This library works by converting from **your markdown -> AST -> React**. The AST is an internal representation of your markdown - without risk of oversimplifying, it's just a bunch of nodes in the shape of the React document. We first make the AST, then we create a React component for all its nodes. 
 
 
 ## Misc notes - advanced details
