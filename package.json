@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrewpareles/MDY.git"
+    "url": "git+https://github.com/andrewpareles/custom-markdown.git"
   },
   "keywords": [
     "mdx",
@@ -22,9 +22,9 @@
   ],
   "author": "Andrew Pareles",
   "bugs": {
-    "url": "https://github.com/andrewpareles/MDY/issues"
+    "url": "https://github.com/andrewpareles/custom-markdown/issues"
   },
-  "homepage": "https://github.com/andrewpareles/MDY#readme",
+  "homepage": "https://github.com/andrewpareles/custom-markdown#readme",
   "dependencies": {
     "@mantine/core": "^6.0.16",
     "@mantine/hooks": "^6.0.11",
