@@ -16,8 +16,9 @@ If you want to render `\myComponent{whatever}` in your markdown to `<MyComponent
 More examples of what you can do: 
 
 - You can add a 'my_table' markdown component that recognizes syntax like `\table{{row1}{row2}{row3}}` in the markdown and render your own custom table component. You just need to make a table schema entry that recognizes `\\table{whatever}`, and a row schema entry that recognizes `'{whatever}'`, and make it so the row is only allowed to be created in table. 
-- Or, you can do complicated things like add a `## My subsection` component that takes everything in the subsection, including the children, and puts it in a div - this is already implemented as the `'subsection'` entry in  [`default_schema.tsx`](https://github.com/andrewpareles/custom-markdown/blob/main/src/default_schema.tsx). 
-- You can even add things like bullet points `- a` and `- b`, just make it so that `createString = '\n- a'` and `endString = '\n'`.
+- Or, you can do complicated things like add a `## My subsection` component that takes everything in the subsection, including the children, and wraps the whole thing in a div - this is already implemented as the `'subsection'` entry in  [`default_schema.tsx`](https://github.com/andrewpareles/custom-markdown/blob/main/src/default_schema.tsx). 
+- You can even add things like bullet points notated `- a`, just make it so that `createString = '\n- a'` and `endString = '\n'`.
+- LaTeX-style labels and refs are also included in the default schema. So is "Feynman hovering", which is what you see when hovering over a link in the online [Feynman Lecture](https://www.feynmanlectures.caltech.edu/I_22.html#Ch22-224) notes.
 
 ## Inner workings
 
