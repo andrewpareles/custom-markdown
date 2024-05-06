@@ -1,6 +1,6 @@
 {
   "name": "custom-markdown",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Custom-markdown is a custom mardown parser that compiles to React. Add custom markdown syntax, specify a schema + components.",
   "license": "MIT",
   "type": "module",
